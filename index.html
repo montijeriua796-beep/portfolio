@@ -1,0 +1,329 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monti Jeriya | Portfolio</title><style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: #05070d;
+        color: #f5f7ff;
+        font-family: Arial, sans-serif;
+        line-height: 1.7;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 8%;
+        border-bottom: 1px solid #18243a;
+        background: #080b13;
+    }
+
+    .logo {
+        color: #4db8ff;
+        font-size: 25px;
+        font-weight: bold;
+        text-shadow: 0 0 15px #008cff;
+    }
+
+    nav a {
+        color: #dce5f5;
+        text-decoration: none;
+        margin-left: 22px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #4db8ff;
+    }
+
+    .hero {
+        min-height: 85vh;
+        padding: 100px 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background:
+            radial-gradient(ellipse at 80% 40%,
+            #09264b 0%, #05070d 55%);
+    }
+
+    .tag {
+        color: #4db8ff;
+        letter-spacing: 3px;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        font-size: clamp(42px, 7vw, 76px);
+        line-height: 1.2;
+        margin: 18px 0;
+    }
+
+    .blue {
+        color: #4db8ff;
+        text-shadow: 0 0 25px #087bff80;
+    }
+
+    .hero h2 {
+        color: #b7c7df;
+        font-size: clamp(19px, 3vw, 27px);
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        color: #a9b5c9;
+        max-width: 620px;
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 28px;
+        padding: 12px 24px;
+        border: 1px solid #168cff;
+        border-radius: 8px;
+        background: #087bff18;
+        color: white;
+        text-decoration: none;
+        width: fit-content;
+        box-shadow: 0 0 20px #087bff25;
+        transition: 0.3s;
+    }
+
+    .button:hover {
+        background: #087bff;
+        box-shadow: 0 0 28px #087bff80;
+    }
+
+    section.content {
+        padding: 80px 10%;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .section-title span {
+        color: #4db8ff;
+    }
+
+    .description {
+        max-width: 750px;
+        color: #a9b5c9;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit, minmax(220px, 1fr)
+        );
+        gap: 20px;
+        margin-top: 28px;
+    }
+
+    .card {
+        background: linear-gradient(145deg, #101827, #090e18);
+        border: 1px solid #1c304c;
+        border-radius: 14px;
+        padding: 25px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        border-color: #168cff;
+        box-shadow: 0 0 25px #087bff18;
+    }
+
+    .card h3 {
+        color: #71c5ff;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #a9b5c9;
+        font-size: 15px;
+    }
+
+    .status {
+        display: inline-block;
+        margin-top: 15px;
+        color: #65d6a0;
+        font-size: 13px;
+    }
+
+    .contact-box {
+        padding: 30px;
+        border: 1px solid #1c304c;
+        border-radius: 14px;
+        background: #0b1220;
+    }
+
+    .contact-box a {
+        color: #71c5ff;
+        text-decoration: none;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        color: #8593a9;
+        border-top: 1px solid #18243a;
+    }
+
+    @media (max-width: 650px) {
+        header {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav a {
+            margin: 0 7px;
+            font-size: 13px;
+        }
+
+        .hero {
+            padding: 80px 7%;
+        }
+
+        section.content {
+            padding: 60px 7%;
+        }
+    }
+</style>
+
+</head><body><header>
+    <div class="logo">MONTI.</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="tag">Welcome to my portfolio</div>
+
+        <h1>Hi, I'm <span class="blue">Monti Jeriya.</span></h1>
+
+        <h2>CSE Student | Aspiring Developer</h2>
+
+        <p>
+            First-year CSE student specializing in Cyber Security
+            at Government Engineering College Ajmer.
+            I'm learning programming and exploring software
+            development, web development, and cyber security.
+        </p>
+
+        <a href="#projects" class="button">Explore My Work ↗</a>
+    </section>
+
+    <section class="content" id="about">
+        <h2 class="section-title">About <span>Me.</span></h2>
+
+        <p class="description">
+            I'm at the beginning of my technology journey.
+            Currently, I'm learning C programming and building
+            my foundation step by step. I enjoy exploring new
+            technologies, learning from mistakes, and improving
+            through practical projects.
+        </p>
+    </section>
+
+    <section class="content" id="skills">
+        <h2 class="section-title">Skills & <span>Learning.</span></h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>C Programming</h3>
+                <p>Learning programming fundamentals, variables,
+                conditions, loops, and functions.</p>
+                <span class="status">Currently Learning</span>
+            </div>
+
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Building my first website and learning
+                how web pages are structured and styled.</p>
+                <span class="status">Currently Learning</span>
+            </div>
+
+            <div class="card">
+                <h3>Cyber Security</h3>
+                <p>Exploring security fundamentals, networking,
+                and safe computing practices.</p>
+                <span class="status">Learning Next</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="content" id="projects">
+        <h2 class="section-title">My <span>Projects.</span></h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    My first web development project.
+                    A personal website to document my skills,
+                    projects, and learning journey.
+                </p>
+                <span class="status">In Progress</span>
+            </div>
+
+            <div class="card">
+                <h3>More Projects Coming Soon</h3>
+                <p>
+                    I'm working on strengthening my programming
+                    skills before building more projects.
+                </p>
+                <span class="status">Coming Soon</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="content" id="contact">
+        <h2 class="section-title">Let's <span>Connect.</span></h2>
+
+        <div class="contact-box">
+            <p>
+                I'm learning, building, and improving every day.
+                You can find my work and progress here:
+            </p>
+
+            <p style="margin-top: 15px;">
+                GitHub: <a href="https://github.com/" target="_blank">
+                Add your profile</a>
+            </p>
+
+            <p>
+                LinkedIn: <a href=https://www.linkedin.com/in/monti-jeriya-61b742443/" target="_blank">
+                Add your profile</a>
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Monti Jeriya · Learning. Building. Improving.</p>
+</footer>
+
+</body>
+</html>
